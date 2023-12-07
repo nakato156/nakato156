@@ -1,0 +1,16 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildT": "npx tailwindcss -i tailwind/input.css -o ./css/output.min.css --minify",
+    "watchBuildT": "npx tailwindcss -i tailwind/input.css -o ./css/output.min.css --minify --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss-animated": "^1.0.1"
+  }
+}

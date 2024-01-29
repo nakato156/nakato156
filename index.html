@@ -127,7 +127,7 @@
       <div
         class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-purple-500 to-transparent opacity-80">
       </div>
-      <span class="relative z-10 bg-gray-100 dark:bg-gray-900 dark:text-white px-6">Acerca de mi</span>
+      <span class="relative z-10 bg-gray-100 dark:bg-gray-900 dark:text-white px-6 transition-colors duration-500">Acerca de mi</span>
     </span>
     <section>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -268,14 +268,34 @@
       <div
         class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-purple-500 to-transparent opacity-80">
       </div>
-      <span class="relative z-10 bg-gray-100 dark:bg-gray-900 rounded-lg dark:text-white px-6">Proyectos</span>
+      <span class="relative z-10 bg-gray-100 dark:bg-gray-900 rounded-lg dark:text-white px-6 transition-colors duration-500">Proyectos</span>
     </span>
     <section class="mx-auto mt-10 px-6">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 text-black dark:text-white">
 
         <!-- Proyecto 1 -->
         <div class="vidrio">
-          <div class="cajita justify-between flex-col p-5 backdrop-blur-xl rounded-xl shadow-md">
+          <div class="cajita justify-between flex-col p-5 backdrop-blur-xl rounded-xl shadow-md h-full">
+            <h3 class="text-4xl text-black font-light mb-4 tracking-widest dark:text-white">Regalo</h3>
+            <p class="text-gray-700 dark:text-gray-200">Creador de instaladores de archivos ejecutables para windows</p>
+            <p>Está basado en flet</p>
+            <div class="flex -space-x-3 my-2">
+              <div
+                class="relative flex shrink-0 select-none items-center justify-center bg-slate-200 font-bold uppercase h-8 w-8 text-xs rounded-full ring-2 ring-violet-700">
+                <img src="./img/lenguajes/python-svgrepo-com.svg" alt="C++">
+              </div>
+              <div
+                class="relative flex shrink-0 select-none items-center justify-center bg-slate-200 font-bold uppercase h-8 w-8 text-xs rounded-full ring-2 ring-violet-700">
+                <img src="./img/lenguajes/flet.svg" alt="C++">
+              </div>
+            </div>
+            <a href="https://github.com/nakato156/Regalo"
+              class="mt-4 inline-block bg-purple-700 text-white px-4 py-2 rounded-full">Ver más</a>
+          </div>
+        </div>
+
+        <div class="vidrio">
+          <div class="cajita justify-between flex-col p-5 backdrop-blur-xl rounded-xl shadow-md h-full">
             <h3 class="text-4xl text-black font-light mb-4 tracking-widest dark:text-white">Kaeli-PSint</h3>
             <p class="text-gray-700 dark:text-gray-200">Python en español o pseudo-c&oacute;digo? Este es un lenguaje de
               programaci&oacute;n en español orientado a la educaci&oacute;n</p>
@@ -285,60 +305,81 @@
                 <img src="./img/lenguajes/c-plus-plus.svg" alt="C++">
               </div>
             </div>
-            <a href="https://github.com/nakato156/Kaeli-PSInt" class="mt-4 inline-block bg-purple-700 text-white px-4 py-2 rounded-full">Ver más</a>
-          </div>
-        </div>
-
-        <!-- Proyecto 2 -->
-        <div class="vidrio">
-          <div class="cajita justify-between flex-col p-5 backdrop-blur-xl rounded-xl shadow-md">
-            <h3 class="text-4xl text-black font-light mb-4 tracking-widest dark:text-white">ITP</h3>
-            <p class="text-gray-700 dark:text-gray-200">Me cans&eacute; de HTTP. ITP es un nuevo protocolo de
-              aplicaci&oacute;n, bastante sencillo y simple, sobre todo divertido :)</p>
-            <div class="flex -space-x-1 my-2">
-              <div
-                class="relative flex shrink-0 select-none items-center justify-center bg-slate-200 font-bold uppercase h-8 w-8 text-xs rounded-full ring-2 ring-violet-700">
-                <img src="./img/lenguajes/python-svgrepo-com.svg" class="rounded-full h-full w-full object-cover object-center"
-                  alt="Python" loading="lazy" />
-              </div>
-            </div>
-            <a href="https://github.com/nakato156/ITP" class="mt-4 inline-block bg-purple-700 text-white px-4 py-2 rounded-full">Ver más</a>
+            <a href="https://github.com/nakato156/Kaeli-PSInt"
+              class="mt-4 inline-block bg-purple-700 text-white px-4 py-2 rounded-full">Ver más</a>
           </div>
         </div>
 
         <!-- Proyecto 3 -->
         <div class="vidrio">
-          <div class="cajita justify-between flex-col p-5 backdrop-blur-xl rounded-xl shadow-md">
+          <div class="cajita justify-between flex-col p-5 backdrop-blur-xl rounded-xl shadow-md h-full">
             <h3 class="text-4xl text-black font-light mb-4 tracking-widest dark:text-white">RotHeart</h3>
             <p class="text-gray-700 dark:text-gray-200">Frameworks muy engorrosos. RotHeart es un enrutador
               b&aacute;sico; para php que sigue una estructura similar a Flask</p>
             <div class="flex -space-x-1 my-2">
               <div
                 class="relative flex shrink-0 select-none items-center justify-center bg-slate-200 font-bold uppercase h-8 w-8 text-xs rounded-full ring-2 ring-violet-700">
-                <img src="./img/lenguajes/php-svgrepo-com.svg" class="rounded-full h-full w-full object-cover object-center"
-                  alt="PHP" loading="lazy" />
+                <img src="./img/lenguajes/php-svgrepo-com.svg"
+                  class="rounded-full h-full w-full object-cover object-center" alt="PHP" loading="lazy" />
               </div>
             </div>
-            <a href="https://github.com/nakato156/RotHeart" class="mt-4 inline-block bg-purple-700 text-white px-4 py-2 rounded-full">Ver más</a>
+            <a href="https://github.com/nakato156/RotHeart"
+              class="mt-4 inline-block bg-purple-700 text-white px-4 py-2 rounded-full">Ver más</a>
           </div>
         </div>
 
         <!-- Proyecto 4 -->
         <div class="vidrio">
-          <div class="cajita justify-between flex-col p-5 backdrop-blur-xl rounded-xl shadow-md">
+          <div class="cajita justify-between flex-col p-5 backdrop-blur-xl rounded-xl shadow-md h-full">
+            <h3 class="text-4xl text-black font-light mb-4 tracking-widest dark:text-white">KTW</h3>
+            <p class="text-gray-700 dark:text-gray-200">Chocolatey es mi enemigo.</p>
+            <p class="text-gray-700 dark:text-gray-200">KTW es un majador de paquetes y aplicaciones para windowss (como apt)</p>
+            <div class="flex -space-x-1 my-2">
+              <div
+                class="relative flex shrink-0 select-none items-center justify-center bg-slate-200 font-bold uppercase h-8 w-8 text-xs rounded-full ring-2 ring-violet-700">
+                <img src="./img/lenguajes/rust-svgrepo.svg"
+                  class="rounded-full h-full w-full object-cover object-center" alt="PHP" loading="lazy" />
+              </div>
+            </div>
+            <a href="https://github.com/nakato156/KTW"
+              class="mt-4 inline-block bg-purple-700 text-white px-4 py-2 rounded-full">Ver más</a>
+          </div>
+        </div>
+
+        <!-- Proyecto 5 -->
+        <div class="vidrio">
+          <div class="cajita justify-between flex-col p-5 backdrop-blur-xl rounded-xl shadow-md h-full">
+            <h3 class="text-4xl text-black font-light mb-4 tracking-widest dark:text-white">ITP</h3>
+            <p class="text-gray-700 dark:text-gray-200">Me cans&eacute; de HTTP. ITP es un nuevo protocolo de
+              aplicaci&oacute;n, bastante sencillo y simple, sobre todo divertido :)</p>
+            <div class="flex -space-x-1 my-2">
+              <div
+                class="relative flex shrink-0 select-none items-center justify-center bg-slate-200 font-bold uppercase h-8 w-8 text-xs rounded-full ring-2 ring-violet-700">
+                <img src="./img/lenguajes/python-svgrepo-com.svg"
+                  class="rounded-full h-full w-full object-cover object-center" alt="Python" loading="lazy" />
+              </div>
+            </div>
+            <a href="https://github.com/nakato156/ITP"
+              class="mt-4 inline-block bg-purple-700 text-white px-4 py-2 rounded-full">Ver más</a>
+          </div>
+        </div>
+
+        <!-- Proyecto 6 -->
+        <div class="vidrio">
+          <div class="cajita justify-between flex-col p-5 backdrop-blur-xl rounded-xl shadow-md h-full">
             <h3 class="text-4xl text-black font-light mb-4 tracking-widest dark:text-white">DinAI</h3>
             <p class="text-gray-700 dark:text-gray-200">El Dino de Chrome no pudo ser m&aacute;s inteligente. Este juego
               tiene mejores gráficos y usa algoritmos gen&eacute;ticos y arboles de decisi&oacute;n</p>
             <div class="flex -space-x-1 my-2">
               <div
                 class="relative flex shrink-0 select-none items-center justify-center bg-slate-200 font-bold uppercase h-8 w-8 text-xs rounded-full ring-2 ring-violet-700">
-                <img src="./img/lenguajes/python-svgrepo-com.svg" class="rounded-full h-full w-full object-cover object-center"
-                  alt="Python" loading="lazy" />
+                <img src="./img/lenguajes/python-svgrepo-com.svg"
+                  class="rounded-full h-full w-full object-cover object-center" alt="Python" loading="lazy" />
               </div>
               <div
                 class="relative flex shrink-0 select-none items-center justify-center bg-slate-200 font-bold uppercase h-8 w-8 text-xs rounded-full ring-2 ring-violet-700">
-                <img src="./img/lenguajes/scikit-learn.png" class="rounded-full h-full w-full object-cover object-center"
-                  alt="Scikit-learn" loading="lazy" />
+                <img src="./img/lenguajes/scikit-learn.png"
+                  class="rounded-full h-full w-full object-cover object-center" alt="Scikit-learn" loading="lazy" />
               </div>
             </div>
             <a href="https://github.com/nakato156/DinAI"
@@ -346,9 +387,9 @@
           </div>
         </div>
 
-        <!-- Proyecto 5 -->
+        <!-- Proyecto 7 -->
         <div class="vidrio">
-          <div class="cajita justify-between flex-col p-5 backdrop-blur-xl rounded-xl shadow-md">
+          <div class="cajita justify-between flex-col p-5 backdrop-blur-xl rounded-xl shadow-md h-full">
             <h3 class="text-4xl text-black font-light mb-4 tracking-widest dark:text-white">SecureKeep</h3>
             <p class="text-gray-700 dark:text-gray-200">Descripción breve del proyecto. Puedes incluir detalles como las
               tecnologías utilizadas, el propósito del proyecto, etc.</p>
@@ -403,25 +444,26 @@
               </div>
               <div
                 class="relative flex shrink-0 select-none items-center justify-center bg-slate-200 font-bold uppercase h-8 w-8 text-xs rounded-full ring-2 ring-violet-700">
-                <img src="./img/lenguajes/kotlin-svgrepo-com.svg" class="rounded-full h-full w-full object-cover object-center"
-                  alt="Kotlin" loading="lazy" />
+                <img src="./img/lenguajes/kotlin-svgrepo-com.svg"
+                  class="rounded-full h-full w-full object-cover object-center" alt="Kotlin" loading="lazy" />
               </div>
             </div>
-            <a href="https://github.com/nakato156/secureKeep" class="mt-4 inline-block bg-purple-700 text-white px-4 py-2 rounded-full">Ver más</a>
+            <a href="https://github.com/nakato156/secureKeep"
+              class="mt-4 inline-block bg-purple-700 text-white px-4 py-2 rounded-full">Ver más</a>
           </div>
         </div>
 
-        <!-- Proyecto 6 -->
+        <!-- Proyecto 8 -->
         <div class="vidrio">
-          <div class="cajita justify-between flex-col p-5 backdrop-blur-xl rounded-xl shadow-md">
+          <div class="cajita justify-between flex-col p-5 backdrop-blur-xl rounded-xl shadow-md h-full">
             <h3 class="text-4xl text-black font-light mb-4 tracking-widest dark:text-white">Shure</h3>
             <p class="text-gray-700 dark:text-gray-200">La copia de Google Drive pero m&aacute;s barato. Especial para
               guardar imágenes para tus proyectos, provee una API sencilla</p>
             <div class="flex -space-x-1 my-2">
               <div
                 class="relative flex shrink-0 select-none items-center justify-center bg-slate-200 font-bold uppercase h-8 w-8 text-xs rounded-full ring-2 ring-violet-700">
-                <img src="./img/lenguajes/php-svgrepo-com.svg" class="rounded-full h-full w-full object-cover object-center"
-                  alt="PHP" loading="lazy" />
+                <img src="./img/lenguajes/php-svgrepo-com.svg"
+                  class="rounded-full h-full w-full object-cover object-center" alt="PHP" loading="lazy" />
               </div>
               <div
                 class="relative flex shrink-0 select-none items-center justify-center bg-slate-200 font-bold uppercase h-8 w-8 text-xs rounded-full ring-2 ring-violet-700">
@@ -429,34 +471,36 @@
                   class="rounded-full h-full w-full object-cover object-center" alt="MySql" loading="lazy" />
               </div>
             </div>
-            <a href="https://storage.ecosolucionesweb.com/" class="mt-4 inline-block bg-purple-700 text-white px-4 py-2 rounded-full">Ver más</a>
+            <a href="https://storage.ecosolucionesweb.com/"
+              class="mt-4 inline-block bg-purple-700 text-white px-4 py-2 rounded-full">Ver más</a>
           </div>
         </div>
 
-        <!-- Proyecto 7 -->
+        <!-- Proyecto 9 -->
         <div class="vidrio">
-          <div class="cajita justify-between flex-col p-5 backdrop-blur-xl rounded-xl shadow-md">
+          <div class="cajita justify-between flex-col p-5 backdrop-blur-xl rounded-xl shadow-md h-full">
             <h3 class="text-4xl text-black font-light mb-4 tracking-widest dark:text-white">MaldiBot</h3>
             <p class="text-gray-700 dark:text-gray-200">Un Bot de Discord maldito, no mentira. Un simple bot de Discord
               que te espía y guarda tus datos para analizar tus gustos musicales</p>
             <div class="flex -space-x-1 my-2">
               <div
                 class="relative flex shrink-0 select-none items-center justify-center bg-slate-200 font-bold uppercase h-8 w-8 text-xs rounded-full ring-2 ring-violet-700">
-                <img src="./img/lenguajes/js-svgrepo-com.svg" class="rounded-full h-full w-full object-cover object-center"
-                  alt="JavaScript" loading="lazy" />
+                <img src="./img/lenguajes/js-svgrepo-com.svg"
+                  class="rounded-full h-full w-full object-cover object-center" alt="JavaScript" loading="lazy" />
               </div>
               <div
                 class="relative flex shrink-0 select-none items-center justify-center bg-slate-200 font-bold uppercase h-8 w-8 text-xs rounded-full ring-2 ring-violet-700">
-                <img src="./img/lenguajes/mongo-svgrepo-com.svg" class="rounded-full h-full w-full object-cover object-center"
-                  alt="MongoDB" loading="lazy" />
+                <img src="./img/lenguajes/mongo-svgrepo-com.svg"
+                  class="rounded-full h-full w-full object-cover object-center" alt="MongoDB" loading="lazy" />
               </div>
             </div>
-            <a href="https://github.com/nakato156/maldibot" class="mt-4 inline-block bg-purple-700 text-white px-4 py-2 rounded-full">Ver más</a>
+            <a href="https://github.com/nakato156/maldibot"
+              class="mt-4 inline-block bg-purple-700 text-white px-4 py-2 rounded-full">Ver más</a>
           </div>
         </div>
 
         <!-- <div class="vidrio">
-                    <div class="cajita relative justify-between flex-col p-5 backdrop-blur-xl rounded-xl shadow-md">
+                    <div class="cajita relative justify-between flex-col p-5 backdrop-blur-xl rounded-xl shadow-md h-full">
                         <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
                         </div>
                         <div class="p-6">

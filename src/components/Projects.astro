@@ -1,0 +1,74 @@
+---
+import type { Project } from "../types";
+
+const projects: Project[] = [
+  {
+    id: '1',
+    title: 'Imitator',
+    description:
+      'A multimodal framework for gesture-to-speech translation using transformer architectures. Focused on zero-shot generalization across diverse speaker profiles.',
+    tags: ['PYTORCH', 'LLAMA', 'TRANSFORMERS', 'SIGN LANGUAGE' ],
+    url: 'https://github.com/Percep3/Imitator-waimlap',
+
+  },
+  {
+    id: '2',
+    title: 'ActivAdda',
+    description:
+      'Implemented activation addition (steering vectors) to bias LLM responses without parameter updates.',
+    tags: ['PYTHON', 'LLM', 'EMBEDDINGS', 'INTERPRETABILITY'],
+    url: "https://colab.research.google.com/drive/1SgXMI3QWt45qdvi0s8rJlmiI-3OfcoC2?usp=sharing"
+  },
+  {
+    id: '3',
+    title: 'SKAI - Affective Response Generation',
+    description:
+      'Trained a reward model over fine-grained emotional categories and adapted GPT-2 to generate supportive and sentiment-aware responses.',
+    tags: ['PPO', 'RLHF', 'PYTORCH'],
+    url: 'https://github.com/nakato156/skai'
+  },
+];
+---
+<section id="projects" class="scroll-mt-32">
+  <div class="flex items-center gap-4 mb-12">
+    <h2 class="text-sm font-bold uppercase tracking-[0.2em] text-slate-400 shrink-0">Featured Research Projects</h2>
+    <div class="h-[1px] flex-grow bg-slate-200 dark:bg-slate-800"></div>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-8">
+    {projects.map((project) => (
+      <div class="glass p-8 rounded-2xl group border border-slate-200/50 dark:border-slate-800/50 hover:border-primary/50 transition-all duration-300 relative overflow-hidden">
+        <div class="absolute -right-4 -top-4 w-32 h-32 bg-primary/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+
+        <div class="flex justify-between items-start mb-6">
+          <h3 class="text-2xl font-bold text-strong-var group-hover:text-primary transition-colors">
+            {project.title}
+          </h3>
+          <div class="w-1 h-8 bg-primary rounded-full group-hover:h-12 transition-all"></div>
+        </div>
+
+        <p class="text-slate-500 dark:text-slate-400 mb-8 leading-relaxed">
+          {project.description}
+        </p>
+
+        <div class="flex flex-wrap gap-2 mb-10">
+          {project.tags.map((tag) => (
+            <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800/50 text-[10px] font-mono font-bold rounded-full uppercase tracking-wider text-slate-500 dark:text-slate-400">
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        <a
+          class="bg-primary text-white px-6 py-2.5 rounded-xl text-sm font-semibold flex items-center gap-2 hover:bg-primary-dark transition-all active:scale-95 shadow-md shadow-primary/10"
+          href={project.url}
+          target="_blank"
+          rel="noreferrer"
+        >
+          View Project
+          <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+    ))}
+  </div>
+</section>

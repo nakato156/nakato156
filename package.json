@@ -1,16 +1,23 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "tailwind.config.js",
+  "name": "nakato156",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "npx tailwindcss -i tailwind/input.css -o ./css/output.min.css --minify",
-    "watch-tailwind": "npx tailwindcss -i tailwind/input.css -o ./css/output.min.css --minify --watch"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/rss": "^4.0.14",
+    "@astrojs/sitemap": "^3.6.1",
+    "astro": "^5.16.9",
+    "material-symbols": "^0.40.2",
+    "sharp": "^0.34.3"
+  },
   "devDependencies": {
-    "tailwindcss-animated": "^1.0.1"
+    "@tailwindcss/vite": "^4.1.18",
+    "tailwindcss": "^4.1.18"
   }
 }

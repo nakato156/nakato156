@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+@import "material-symbols/outlined.css";
+@import "tailwindcss";
+
+@theme {
+	--color-primary: #8b5cf6;
+	--color-primary-dark: #7c3aed;
+	--color-background-light: #fdfdff;
+	--color-background-dark: #0a0a0c;
+	--font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+	--font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
+:root {
+	--primary: #8b5cf6;
+	--primary-dark: #7c3aed;
+	--background-light: #fdfdff;
+	--background-dark: #0a0a0c;
+	--text-strong: #0f172a;
+	--text-body: #1e293b;
+}
+
+.dark {
+	--text-strong: #e2e8f0;
+	--text-body: #cbd5e1;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	font-family: var(--font-sans);
+	background: var(--color-background-light);
+	color: var(--text-body);
+	line-height: 1.6;
+	transition: background-color 200ms ease, color 200ms ease;
+	-webkit-font-smoothing: antialiased;
+}
+
+.dark body {
+	background: var(--color-background-dark);
+	color: #e2e8f0;
+}
+
+code,
+.font-mono {
+	font-family: var(--font-mono);
+}
+
+/* Glass effect matching the original React project */
+html:not(.dark) .glass {
+	background: rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(12px);
+	border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dark .glass {
+	background: rgba(255, 255, 255, 0.03);
+	backdrop-filter: blur(12px);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@keyframes float {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+}
+
+.animate-float {
+	animation: float 3s ease-in-out infinite;
+}
+
+.text-strong-var {
+	color: var(--text-strong) !important;
+}
+
+.sr-only {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	white-space: nowrap;
+}

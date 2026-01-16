@@ -1,0 +1,48 @@
+---
+import foto from '../assets/foto.jpg';
+---
+<section class="flex flex-col items-center text-center relative pt-10">
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-primary/10 blur-[80px] rounded-full -z-10 opacity-50"></div>
+
+  <div class="relative mb-8 group">
+    <div class="w-32 h-32 md:w-40 md:h-40 rounded-full p-1 border-2 border-primary/20 overflow-hidden transition-transform duration-500 group-hover:scale-105">
+      <img
+        alt="Nakato Foto"
+        class="w-full h-full object-cover rounded-full"
+        src={foto.src}
+        width={foto.width}
+        height={foto.height}
+      />
+    </div>
+    <div class="absolute flex justify-center items-center -bottom-1 -right-1 bg-white dark:bg-slate-900 p-1.5 rounded-full shadow-lg border border-slate-100 dark:border-slate-800">
+      <span class="material-symbols-outlined text-primary text-xl font-bold">verified</span>
+    </div>
+  </div>
+
+  <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-strong-var">
+    Nakato
+  </h1>
+
+  <p class="text-primary dark:text-primary font-mono font-medium text-lg mb-6 tracking-wide">
+    Research Scientist
+  </p>
+
+  <p class="max-w-2xl text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-10">
+    Focused on <span class="text-slate-900 dark:text-slate-100 font-semibold underline decoration-primary/30">Multimodal Representation Learning</span> and <span class="text-slate-900 dark:text-slate-100 font-semibold underline decoration-primary/30">Large Language Models</span>. Bridging the gap between vision and language through scalable architectural innovations and RLHF.
+  </p>
+
+  <div class="flex items-center gap-8">
+    <a class="group flex items-center gap-2 text-slate-500 hover:text-primary transition-all" href="#">
+      <span class="material-symbols-outlined text-xl">link</span>
+      <span class="font-medium">LinkedIn</span>
+    </a>
+    <a class="group flex items-center gap-2 text-slate-500 hover:text-primary transition-all" href="#">
+      <span class="material-symbols-outlined text-xl font-mono">code</span>
+      <span class="font-medium">GitHub</span>
+    </a>
+    <a class="group flex items-center gap-2 text-slate-500 hover:text-primary transition-all" href="mailto:contact@nakato.research">
+      <span class="material-symbols-outlined text-xl">alternate_email</span>
+      <span class="font-medium">Email</span>
+    </a>
+  </div>
+</section>

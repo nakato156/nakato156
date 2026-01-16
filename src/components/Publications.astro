@@ -1,0 +1,43 @@
+---
+import type { Publication } from "../types";
+
+const publications: Publication[] = [
+{
+    id: '1',
+    title: 'Learning Motion-Based Embeddings for Sign Language Retrieval.',
+    venue: 'Manuscript in preparation',
+    year: '2026',
+    draft: true,
+  },
+  {
+    id: '2',
+    title: 'Imitator: Multimodal Sign Language Model',
+    venue: 'SimBig25 International Conference on Information Management and Big Data',
+    year: '2025',
+  }
+];
+---
+<section id="publications" class="scroll-mt-32">
+  <div class="flex items-center gap-4 mb-12">
+    <h2 class="text-sm font-bold uppercase tracking-[0.2em] text-slate-400 shrink-0">Selected Publications</h2>
+    <div class="h-[1px] flex-grow bg-slate-200 dark:bg-slate-800"></div>
+  </div>
+
+  <div class="space-y-4">
+    {publications.map((pub) => (
+      <div class="glass p-6 rounded-2xl border-l-4 border-l-primary/30 hover:border-l-primary flex flex-col md:flex-row md:items-center justify-between gap-6 group cursor-pointer hover:bg-white/10 transition-all shadow-sm">
+        <div>
+          <h4 class="text-lg font-bold mb-1 group-hover:text-primary transition-colors text-strong-var">
+            {pub.title}
+          </h4>
+          <p class="text-sm text-slate-500 dark:text-slate-400 italic">
+            {pub.venue} {pub.draft && '(Draft)'} — {pub.year}
+          </p>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-slate-300 dark:text-slate-600 group-hover:text-primary transition-colors">picture_as_pdf</span>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

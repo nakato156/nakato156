@@ -1,0 +1,78 @@
+---
+const links = [
+  { href: '#about', label: 'About' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#experience', label: 'Experience' },
+  { href: '#publications', label: 'Publications' },
+];
+const brandInitials = 'NK';
+const brandName = 'Nakato';
+const cvHref = '#';
+---
+<header class="fixed top-0 left-0 right-0 z-50 flex justify-center p-6 pointer-events-none">
+  <nav class="w-full max-w-5xl pointer-events-auto flex items-center justify-between px-6 py-3 glass rounded-2xl shadow-sm border border-slate-200/50 dark:border-slate-800/50">
+    <div class="flex items-center gap-2">
+      <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xs">{brandInitials}</div>
+      <span class="font-semibold tracking-tight hidden sm:block">{brandName}</span>
+    </div>
+
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-500 dark:text-slate-400">
+      {links.map((link) => (
+        <a class="hover:text-primary transition-colors" href={link.href}>{link.label}</a>
+      ))}
+    </div>
+
+    <div class="flex items-center gap-4 justify-center">
+      <button
+        id="theme-toggle"
+        class="p-2 rounded-full flex items-center justify-center hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group"
+        aria-label="Toggle dark mode"
+        type="button"
+      >
+        <span class="material-symbols-outlined text-xl leading-none block group-hover:text-primary" data-icon>dark_mode</span>
+      </button>
+
+      <div class="h-4 w-[1px] bg-slate-200 dark:bg-slate-800"></div>
+
+      <a
+        class="bg-primary hover:opacity-90 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-lg shadow-primary/20"
+        href={cvHref}
+      >
+        Download CV
+      </a>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const toggle = document.getElementById('theme-toggle');
+  const icon = toggle?.querySelector('[data-icon]');
+  const root = document.documentElement;
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+  const applyTheme = (mode) => {
+    const isDark = mode === 'dark';
+    root.classList.toggle('dark', isDark);
+    icon && (icon.textContent = isDark ? 'light_mode' : 'dark_mode');
+  };
+
+  const stored = localStorage.getItem('theme');
+  const initial = stored === 'dark' ? 'dark' : 'light';
+  // If light is the chosen state, ensure the dark class is removed to avoid white text on light backgrounds.
+  if (initial === 'light') {
+    root.classList.remove('dark');
+  }
+  applyTheme(initial);
+
+  toggle?.addEventListener('click', () => {
+    const next = root.classList.contains('dark') ? 'light' : 'dark';
+    applyTheme(next);
+    localStorage.setItem('theme', next);
+  });
+
+  prefersDark.addEventListener('change', (event) => {
+    if (!localStorage.getItem('theme')) {
+      applyTheme(event.matches ? 'dark' : 'light');
+    }
+  });
+</script>

@@ -2,6 +2,11 @@
 @import "material-symbols/outlined.css";
 @import "tailwindcss";
 
+/* debug */
+.__tw_dark_debug { @apply dark:bg-red-500; }
+
+@variant dark (&:where(.dark, .dark *));
+
 @theme {
 	--color-primary: #8b5cf6;
 	--color-primary-dark: #7c3aed;

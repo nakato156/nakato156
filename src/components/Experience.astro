@@ -1,5 +1,6 @@
 ---
 import type { ExperienceItem, EducationItem } from "../types";
+import upc from '../assets/upc.webp';
 
 const workExperience: ExperienceItem[] = [
   {
@@ -28,7 +29,7 @@ const educationItems: EducationItem[] = [
     institution: 'Universidad Peruana de Ciencias Aplicadas',
     degree: 'B.S. Computer Science',
     description: 'Specialization in Artificial Intelligence and Neuroscience',
-    logo: 'https://www.upc.edu.pe/favicon.ico',
+    logo: upc.src,
   },
 ];
 ---
@@ -44,9 +45,9 @@ const educationItems: EducationItem[] = [
       {workExperience.map((item) => (
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 group hover:bg-slate-50 dark:hover:bg-slate-900/40 p-4 -mx-4 rounded-2xl transition-all">
           <div class="flex gap-4">
-            <div class="w-12 h-12 rounded-full glass border border-slate-200 dark:border-slate-800 flex items-center justify-center overflow-hidden shrink-0 shadow-sm bg-white dark:bg-slate-800">
+            <div class="w-12 h-12 rounded-full glass border border-slate-200 dark:border-slate-400 flex items-center justify-center overflow-hidden shrink-0 shadow-sm bg-white dark:bg-slate-800">
               {item.logo ? (
-                <img src={item.logo} alt={item.company} class="w-7 h-7 object-contain" />
+                <img src={item.logo} alt={item.company} class="w-full h-full object-contain" />
               ) : (
                 <span class="material-symbols-outlined text-primary">work</span>
               )}
@@ -61,7 +62,7 @@ const educationItems: EducationItem[] = [
                 )}
               </div>
               <p class="text-slate-600 dark:text-slate-400 font-medium">{item.role}</p>
-              {item.description && <p class="text-sm text-slate-500 dark:text-slate-500 mt-1">{item.description}</p>}
+              {item.description && <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">{item.description}</p>}
             </div>
           </div>
           <div class="text-slate-400 dark:text-slate-500 font-mono text-xs md:text-sm whitespace-nowrap pt-1">
@@ -83,9 +84,9 @@ const educationItems: EducationItem[] = [
       {educationItems.map((item) => (
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 group hover:bg-slate-50 dark:hover:bg-slate-900/40 p-4 -mx-4 rounded-2xl transition-all">
           <div class="flex gap-4">
-            <div class="w-12 h-12 rounded-full glass border border-slate-200 dark:border-slate-800 flex items-center justify-center overflow-hidden shrink-0 shadow-sm bg-white dark:bg-slate-800">
+            <div class="w-12 h-12 rounded-full glass border-2 border-purple-600 flex items-center justify-center overflow-hidden shrink-0 shadow-sm bg-white dark:bg-slate-800">
               {item.logo ? (
-                <img src={item.logo} alt={item.institution} class="w-7 h-7 object-contain" />
+                <img src={item.logo} alt={item.institution} class="w-full h-full object-cover bg-white" />
               ) : (
                 <span class="material-symbols-outlined text-primary">school</span>
               )}
@@ -93,7 +94,7 @@ const educationItems: EducationItem[] = [
             <div>
               <h3 class="font-bold text-lg text-slate-900 dark:text-white">{item.institution}</h3>
               <p class="text-slate-600 dark:text-slate-400 font-medium">{item.degree}</p>
-              {item.description && <p class="text-sm text-slate-500 dark:text-slate-500 mt-1">{item.description}</p>}
+              {item.description && <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">{item.description}</p>}
             </div>
           </div>
           <div class="text-slate-400 dark:text-slate-500 font-mono text-xs md:text-sm whitespace-nowrap pt-1">

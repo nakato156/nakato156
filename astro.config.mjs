@@ -7,7 +7,8 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://nakato156.github.io/nakato156',
+	site: 'https://nakato156.github.io',
+	base: "/nakato156",
 	integrations: [mdx(), sitemap()],
 	vite: {
     	plugins: [tailwindcss()],

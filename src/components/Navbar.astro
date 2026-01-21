@@ -57,7 +57,7 @@ const cvHref = '#';
   };
 
   const stored = localStorage.getItem('theme');
-  const initial = stored === 'dark' ? 'dark' : 'light';
+  const initial = stored || (prefersDark.matches ? 'dark' : 'light');
   // If light is the chosen state, ensure the dark class is removed to avoid white text on light backgrounds.
   if (initial === 'light') {
     root.classList.remove('dark');

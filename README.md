@@ -25,22 +25,27 @@ My projects usually sit between **research questions** (representation learning,
 ## Research map
 
 ```mermaid
-flowchart LR
-    A[Multimodal Representation Learning] --> B[Sign Language Retrieval]
-    A --> C[Cross-modal Embeddings]
-    D[LLM Alignment and Control] --> E[Activation Steering]
-    D --> F[Reward Modeling and RLHF]
-    G[Robust Perception] --> H[VQ-VAE Memory Architectures]
-    I[Agentic Systems] --> J[Schema-first Multi-agent Design]
-    K[Distributed ML Engineering] --> L[Recommenders, APIs, Monitoring]
+flowchart TD
+    A[Research-driven AI systems] --> B[Multimodal representation learning]
+    A --> C[LLM alignment and control]
+    A --> D[Robust perception]
+    A --> E[Agentic systems]
+    A --> F[Distributed ML engineering]
 
-    B --> M[Real-world AI Interfaces]
-    C --> M
-    E --> M
-    F --> M
-    H --> M
-    J --> M
-    L --> M
+    B --> B1[Sign language retrieval]
+    B --> B2[Cross-modal embeddings]
+
+    C --> C1[Activation steering]
+    C --> C2[Reward modeling and RLHF]
+
+    D --> D1[VQ-VAE memory architectures]
+    D --> D2[Corruption-aware evaluation]
+
+    E --> E1[Schema-first orchestration]
+    E --> E2[Structured multi-agent workflows]
+
+    F --> F1[Recommender systems]
+    F --> F2[APIs, workers, monitoring]
 ```
 
 ## What I optimize for
@@ -70,10 +75,7 @@ flowchart LR
 
 ## GitHub activity
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=nakato156&show_icons=true&hide_rank=true&include_all_commits=true&show=reviews,prs_merged,prs_merged_percentage&theme=transparent">
-  <img alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=nakato156&show_icons=true&hide_rank=true&include_all_commits=true&show=reviews,prs_merged,prs_merged_percentage&theme=default">
-</picture>
+![Nakato's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=nakato156&theme=github-compact&hide_border=true&area=true)
 
 ## Open to
 

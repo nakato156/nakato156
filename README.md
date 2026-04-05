@@ -76,9 +76,3 @@ flowchart TD
 ## GitHub activity
 
 ![Nakato's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=nakato156&theme=github-compact&hide_border=true&area=true)
-
-## Open to
-
-- Research collaborations in **multimodal learning**, **robustness**, and **LLM alignment**
-- Engineering-heavy AI projects that need **clean system design**, **evaluation discipline**, and **production-aware thinking**
-- Conversations around building AI that is **small, specialized, and actually useful**

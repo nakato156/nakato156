@@ -80,7 +80,3 @@ flowchart LR
 - Research collaborations in **multimodal learning**, **robustness**, and **LLM alignment**
 - Engineering-heavy AI projects that need **clean system design**, **evaluation discipline**, and **production-aware thinking**
 - Conversations around building AI that is **small, specialized, and actually useful**
-
----
-
-> This profile prioritizes signal over decoration: selected projects, explicit research directions, and artifacts that communicate how I think and build.

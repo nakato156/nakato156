@@ -1,2 +1,86 @@
+<div align="center">
+
 # Nakato
-http://nakato156.github.io/nakato156
+
+**AI Engineer building research-driven systems**  
+**Multimodal learning, controllable LLMs, robust perception, and distributed ML infrastructure**
+
+<a href="https://nakato156.github.io/nakato156/">Portfolio</a>
+
+<br/>
+
+![Role](https://img.shields.io/badge/Role-AI%20Engineer%20%26%20Researcher-111827?style=flat-square)
+![Focus](https://img.shields.io/badge/Focus-Multimodal%20Learning-1f2937?style=flat-square)
+![Focus](https://img.shields.io/badge/Focus-LLM%20Alignment-1f2937?style=flat-square)
+![Focus](https://img.shields.io/badge/Focus-Agentic%20Systems-1f2937?style=flat-square)
+![Focus](https://img.shields.io/badge/Focus-Distributed%20ML%20Systems-1f2937?style=flat-square)
+
+</div>
+
+---
+
+I work on **AI systems that are both experimentally grounded and deployment-aware**.
+My projects usually sit between **research questions** (representation learning, robustness, controllability, alignment) and **engineering constraints** (protocols, infra, monitoring, APIs, reproducibility).
+
+## Research map
+
+```mermaid
+flowchart LR
+    A[Multimodal Representation Learning] --> B[Sign Language Retrieval]
+    A --> C[Cross-modal Embeddings]
+    D[LLM Alignment and Control] --> E[Activation Steering]
+    D --> F[Reward Modeling and RLHF]
+    G[Robust Perception] --> H[VQ-VAE Memory Architectures]
+    I[Agentic Systems] --> J[Schema-first Multi-agent Design]
+    K[Distributed ML Engineering] --> L[Recommenders, APIs, Monitoring]
+
+    B --> M[Real-world AI Interfaces]
+    C --> M
+    E --> M
+    F --> M
+    H --> M
+    J --> M
+    L --> M
+```
+
+## What I optimize for
+
+- **Research with a concrete hypothesis** instead of vague experimentation.
+- **Small or modular systems** that can actually be trained, debugged, and deployed.
+- **Evaluation-first workflows** with explicit baselines, trade-offs, and measurable gains.
+- **Readable engineering**: protocols, structured interfaces, reproducible pipelines, and clear failure boundaries.
+
+## Selected work
+
+| Project | Why it matters | Stack |
+|---|---|---|
+| [DeMemte](https://github.com/nakato156/Dememte) | Explores **latent memory with VQ-VAE + attention** for image classification robustness, with emphasis on **fair corruption-aware comparisons** instead of inflated baselines. | PyTorch, VQ-VAE, Transformers, robustness |
+| [Imitator](https://github.com/Percep3/Imitator-waimlap) | Small multimodal model that maps **sign video to text embeddings**, extending language-model-facing systems with **sign-language-aware representations**. | PyTorch, multimodal embeddings, sign language |
+| [NADO](https://github.com/nakato156/nado) | **Schema-first multi-agent system** for 8-bit composition with explicit roles, JSON protocols, and orchestration. | Python, LangChain, Pydantic, agents |
+| [GoFlix / Gopher-super](https://github.com/nakato156/Gopher-super) | Distributed recommender system with **coordinator-worker architecture**, JWT auth, monitoring, Redis, MongoDB, and horizontal scaling. | Go, TypeScript, Redis, MongoDB, Docker |
+| [ActivAdda](https://github.com/nakato156/ActivAdda) | Practical implementation of **activation addition / steering vectors** to bias LLM behavior without weight updates. | Jupyter, Python, interpretability |
+| [World-model](https://github.com/nakato156/World-model) | Early exploration of **world models + deep RL** for robot navigation in simulated environments built over GTA V. | Python, RL, VAEs, simulation |
+
+## Current themes across my repositories
+
+- **Multimodal alignment**: gesture, vision, language, embedding spaces.
+- **LLM control**: activation steering, reward modeling, behavior shaping.
+- **Robust models**: memory-augmented architectures and corruption-aware evaluation.
+- **AI systems engineering**: multi-agent protocols, service decomposition, monitoring, and distributed execution.
+
+## GitHub activity
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=nakato156&show_icons=true&hide_rank=true&include_all_commits=true&show=reviews,prs_merged,prs_merged_percentage&theme=transparent">
+  <img alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=nakato156&show_icons=true&hide_rank=true&include_all_commits=true&show=reviews,prs_merged,prs_merged_percentage&theme=default">
+</picture>
+
+## Open to
+
+- Research collaborations in **multimodal learning**, **robustness**, and **LLM alignment**
+- Engineering-heavy AI projects that need **clean system design**, **evaluation discipline**, and **production-aware thinking**
+- Conversations around building AI that is **small, specialized, and actually useful**
+
+---
+
+> This profile prioritizes signal over decoration: selected projects, explicit research directions, and artifacts that communicate how I think and build.

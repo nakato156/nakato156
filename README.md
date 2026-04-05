@@ -22,32 +22,6 @@
 I work on **AI systems that are both experimentally grounded and deployment-aware**.
 My projects usually sit between **research questions** (representation learning, robustness, controllability, alignment) and **engineering constraints** (protocols, infra, monitoring, APIs, reproducibility).
 
-## Research map
-
-```mermaid
-flowchart TD
-    A[Research-driven AI systems] --> B[Multimodal representation learning]
-    A --> C[LLM alignment and control]
-    A --> D[Robust perception]
-    A --> E[Agentic systems]
-    A --> F[Distributed ML engineering]
-
-    B --> B1[Sign language retrieval]
-    B --> B2[Cross-modal embeddings]
-
-    C --> C1[Activation steering]
-    C --> C2[Reward modeling and RLHF]
-
-    D --> D1[VQ-VAE memory architectures]
-    D --> D2[Corruption-aware evaluation]
-
-    E --> E1[Schema-first orchestration]
-    E --> E2[Structured multi-agent workflows]
-
-    F --> F1[Recommender systems]
-    F --> F2[APIs, workers, monitoring]
-```
-
 ## What I optimize for
 
 - **Research with a concrete hypothesis** instead of vague experimentation.
@@ -73,6 +47,4 @@ flowchart TD
 - **AI systems engineering**: multi-agent protocols, service decomposition, monitoring, and distributed execution.
 
 ## GitHub activity
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nakato156&show_icons=true&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub stats" />
-</p>
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=nakato156&show_icons=true&hide_border=true&include_all_commits=true&count_private=true)](https://github.com/anuraghazra/github-readme-stats)

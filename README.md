@@ -62,7 +62,6 @@ flowchart TD
 | [DeMemte](https://github.com/nakato156/Dememte) | Explores **latent memory with VQ-VAE + attention** for image classification robustness, with emphasis on **fair corruption-aware comparisons** instead of inflated baselines. | PyTorch, VQ-VAE, Transformers, robustness |
 | [Imitator](https://github.com/Percep3/Imitator-waimlap) | Small multimodal model that maps **sign video to text embeddings**, extending language-model-facing systems with **sign-language-aware representations**. | PyTorch, multimodal embeddings, sign language |
 | [NADO](https://github.com/nakato156/nado) | **Schema-first multi-agent system** for 8-bit composition with explicit roles, JSON protocols, and orchestration. | Python, LangChain, Pydantic, agents |
-| [GoFlix / Gopher-super](https://github.com/nakato156/Gopher-super) | Distributed recommender system with **coordinator-worker architecture**, JWT auth, monitoring, Redis, MongoDB, and horizontal scaling. | Go, TypeScript, Redis, MongoDB, Docker |
 | [ActivAdda](https://github.com/nakato156/ActivAdda) | Practical implementation of **activation addition / steering vectors** to bias LLM behavior without weight updates. | Jupyter, Python, interpretability |
 | [World-model](https://github.com/nakato156/World-model) | Early exploration of **world models + deep RL** for robot navigation in simulated environments built over GTA V. | Python, RL, VAEs, simulation |
 

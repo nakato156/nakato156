@@ -73,5 +73,6 @@ flowchart TD
 - **AI systems engineering**: multi-agent protocols, service decomposition, monitoring, and distributed execution.
 
 ## GitHub activity
-
-![Nakato's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=nakato156&theme=github-compact&hide_border=true&area=true)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=nakato156&show_icons=true&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub stats" />
+</p>

@@ -47,4 +47,6 @@ My projects usually sit between **research questions** (representation learning,
 - **AI systems engineering**: multi-agent protocols, service decomposition, monitoring, and distributed execution.
 
 ## GitHub activity
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=nakato156&show_icons=true&hide_border=true&include_all_commits=true&count_private=true)](https://github.com/anuraghazra/github-readme-stats)
+<p align="center">
+  <img src="https://github-stats-iota-ten.vercel.app/api?username=nakato156&theme=algolia&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub stats" />
+</p>

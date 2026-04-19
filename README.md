@@ -20,7 +20,7 @@
 
 ---
 
-> I am a student researcher at **UPC Lima** working on **multimodal representation alignment** in low-resource and accessibility-oriented settings — specifically, how visual motion sequences from sign language can be aligned with LLM latent spaces without gloss supervision. Seeking **Research Engineer / Research Intern** roles on a track toward a PhD.
+> I am a student researcher at **UPC Lima** working on **multimodal representation alignment** in low-resource and accessibility-oriented settings. Seeking **Research Engineer / Research Intern** roles on a track toward a PhD.
 
 ---
 

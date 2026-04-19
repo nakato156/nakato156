@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&pause=1200&color=6E9EFF&center=true&vCenter=true&width=700&lines=Christian+Velasquez+%C2%B7+nakato156;Student+Researcher+%40+UPC+Lima;Multimodal+Representation+Learning;Sign+Language+Understanding;LLM+Latent+Space+Alignment" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&pause=1200&color=6E9EFF&center=true&vCenter=true&width=700&lines=Nakato156;Student+Researcher+%40+UPC+Lima;Multimodal+Representation+Learning;Sign+Language+Understanding;LLM+Latent+Space+Alignment" alt="Typing SVG" />
 
 <br/>
 

@@ -67,14 +67,6 @@ Transformer embedding model for similarity-based retrieval over the official Per
 
 ---
 
-## 🎤 Talks & Presentations
-
-| | Venue | Year | Topic |
-|---|---|---|---|
-| 🗣 | [SimBIG 2025 / WAIMLAP](https://simbig.org/) · PUCP | 2025 | Imitator — gloss-free embedding alignment for sign language |
-| 📊 | Summit of AI in Latin America (SALA) — Poster | 2026 | DeMemTe — robustness via discrete latent memory |
-
----
 
 ## 🔬 Selected Research Projects
 

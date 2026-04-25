@@ -9,6 +9,7 @@ import Publications from '../components/Publications.astro';
 import Contact from '../components/Contact.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import chessImg from '../assets/chess.webp';
 ---
 
 <!doctype html>
@@ -17,17 +18,32 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body class="min-h-screen selection:bg-primary/30 bg-white dark:bg-slate-950 text-slate-900 dark:text-white">
-		<Navbar />
+		<div
+			aria-hidden="true"
+			class="fixed inset-0 pointer-events-none opacity-[0.06] dark:opacity-[0.10] overflow-hidden"
+			style="z-index: 0;"
+		>
+			<img
+				src={chessImg.src}
+				class="grayscale absolute left-0 w-full h-auto"
+				style="bottom: -15%;"
+				alt=""
+			/>
+		</div>
 
-		<main class="max-w-4xl mx-auto px-6 pt-32 pb-20 space-y-32">
-			<Hero />
-			<About />
-			<Projects />
-			<Experience />
-			<Publications />
-			<Contact />
-		</main>
+		<div class="relative" style="z-index: 10;">
+			<Navbar />
 
-		<Footer />
+			<main class="max-w-4xl mx-auto px-6 pt-32 pb-20 space-y-32">
+				<Hero />
+				<About />
+				<Projects />
+				<Experience />
+				<Publications />
+				<Contact />
+			</main>
+
+			<Footer />
+		</div>
 	</body>
 </html>

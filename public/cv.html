@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet"/>
+<meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet"/>
+<title>Christian Velasquez — Research CV</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --ink:       #0d1117;
+    --paper:     #f9f6ef;
+    --rule:      #c8bfa8;
+    --accent:    #1a3a5c;
+    --gold:      #b07d3a;
+    --muted:     #5a5248;
+    --tag-bg:    #e8e2d8;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 9.5pt;
+    line-height: 1.55;
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* ─── HEADER ─────────────────────────────── */
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 24px;
+    padding: 48px 52px 28px;
+    border-bottom: 2px solid var(--accent);
+    position: relative;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, var(--accent) 0%, var(--gold) 100%);
+  }
+
+  .name-block h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36pt;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: var(--accent);
+    line-height: 1.05;
+  }
+  .name-block .subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12pt;
+    font-style: italic;
+    color: var(--gold);
+    margin-top: 3px;
+    letter-spacing: 0.3px;
+  }
+
+  .contact-block {
+    text-align: right;
+    font-size: 8.5pt;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+  .contact-block a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .contact-block a:hover { text-decoration: underline; }
+
+  /* ─── TARGETED NOTE ──────────────────────── */
+  .note {
+    margin: 0 52px;
+    padding: 11px 16px;
+    border-left: 3px solid var(--gold);
+    background: #f1ece2;
+    font-size: 8.5pt;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .note strong { color: var(--accent); font-style: normal; }
+
+  /* ─── BODY ───────────────────────────────── */
+  main {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 0;
+    padding: 0 52px 48px;
+  }
+
+  /* ─── SIDEBAR ────────────────────────────── */
+  aside {
+    padding: 28px 22px 0 0;
+    border-right: 1px solid var(--rule);
+  }
+
+  .side-section { margin-bottom: 26px; }
+  .side-label {
+    font-size: 7pt;
+    font-weight: 500;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+    display: block;
+  }
+  .side-value {
+    font-size: 8.5pt;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .side-value a {
+    color: var(--accent);
+    text-decoration: none;
+    display: block;
+  }
+  .side-value a:hover { text-decoration: underline; }
+
+  .pill {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: var(--accent);
+    font-size: 7.5pt;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin: 2px 2px 0 0;
+  }
+  .pill.accent {
+    background: var(--accent);
+    color: white;
+  }
+
+  /* ─── CONTENT ────────────────────────────── */
+  .content {
+    padding: 28px 0 0 28px;
+  }
+
+  section { margin-bottom: 24px; }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15pt;
+    font-weight: 600;
+    color: var(--accent);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 4px;
+    margin-bottom: 14px;
+    letter-spacing: 0.2px;
+  }
+
+  .entry { margin-bottom: 15px; }
+
+  .entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .entry-title {
+    font-weight: 500;
+    font-size: 9.5pt;
+    color: var(--ink);
+  }
+  .entry-title em {
+    font-style: italic;
+    font-weight: 300;
+    color: var(--muted);
+  }
+  .entry-date {
+    font-size: 8pt;
+    color: var(--muted);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .entry-org {
+    font-size: 8.5pt;
+    color: var(--gold);
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  .entry-body {
+    font-size: 8.5pt;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .entry-body ul {
+    list-style: none;
+    padding: 0;
+  }
+  .entry-body ul li {
+    padding-left: 12px;
+    position: relative;
+    margin-bottom: 3px;
+  }
+  .entry-body ul li::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: 700;
+  }
+
+  /* ─── PUBLICATION ────────────────────────── */
+  .pub-entry {
+    margin-bottom: 13px;
+    padding: 10px 12px;
+    background: #f3ede3;
+    border-left: 2px solid var(--gold);
+  }
+  .pub-title {
+    font-weight: 500;
+    font-size: 9pt;
+    color: var(--accent);
+    margin-bottom: 3px;
+  }
+  .pub-venue {
+    font-size: 8pt;
+    color: var(--gold);
+    font-style: italic;
+    margin-bottom: 4px;
+  }
+  .pub-details {
+    font-size: 7.5pt;
+    color: var(--muted);
+    line-height: 1.55;
+  }
+  .pub-badge {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    font-size: 6.5pt;
+    padding: 1px 6px;
+    border-radius: 2px;
+    letter-spacing: 0.5px;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+
+  /* ─── METRIC ROW ─────────────────────────── */
+  .metric-row {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 12px;
+  }
+  .metric {
+    flex: 1;
+    background: var(--accent);
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+  }
+  .metric-val {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18pt;
+    font-weight: 700;
+    display: block;
+    line-height: 1;
+  }
+  .metric-label {
+    font-size: 7pt;
+    opacity: 0.75;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 2px;
+  }
+
+  /* ─── SYNERGY BOX ────────────────────────── */
+  .synergy {
+    background: linear-gradient(135deg, #0d1f33 0%, #1a3a5c 100%);
+    color: white;
+    padding: 14px 16px;
+    margin-bottom: 14px;
+    position: relative;
+    overflow: hidden;
+  }
+  .synergy::before {
+    content: '"';
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 80pt;
+    color: rgba(176,125,58,0.15);
+    position: absolute;
+    top: -10px; left: 8px;
+    line-height: 1;
+  }
+  .synergy-title {
+    font-size: 7pt;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px;
+    position: relative;
+  }
+  .synergy p {
+    font-size: 8.5pt;
+    line-height: 1.6;
+    opacity: 0.9;
+    position: relative;
+  }
+  .synergy strong { color: var(--gold); }
+
+  @media print {
+    body { max-width: 100%; }
+    .note { break-inside: avoid; }
+    .pub-entry { break-inside: avoid; }
+    .entry { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══════════════════ HEADER ══════════════════ -->
+<header>
+  <div class="name-block">
+    <h1>Christian Velasquez<br>Borasino</h1>
+    <p class="subtitle">Research Engineer · Multimodal Learning &amp; Vision–Language Alignment</p>
+  </div>
+  <div class="contact-block">
+    Lima, Perú &nbsp;·&nbsp;<br>
+    <a href="mailto:nakatos.research@outlook.com">nakatos.research@outlook.com</a><br>
+    <a href="https://nakato156.github.io/nakato156" target="_blank">nakato156.github.io/nakato156</a><br>
+    <a href="https://github.com/nakato156" target="_blank">github.com/nakato156</a><br>
+    <a href="https://percep3.com" target="_blank">percep3.com</a> &nbsp;·&nbsp;
+    <a href="https://linkedin.com/in/christian-velasquez-borasino" target="_blank">LinkedIn</a>
+  </div>
+</header>
+
+<!-- ══════════════════ BODY ══════════════════ -->
+<main>
+
+<!-- ══ SIDEBAR ══ -->
+<aside>
+
+  <div class="side-section">
+    <span class="side-label">Research Interests</span>
+    <div class="side-value">
+      <span class="pill accent">Vision–Language</span>
+      <span class="pill accent">Multimodal Align.</span>
+      <span class="pill">Transformers</span>
+      <span class="pill">RLHF</span>
+      <span class="pill">Repr. Learning</span>
+      <span class="pill">Sign Language</span>
+      <span class="pill">Contrastive Learn.</span>
+    </div>
+  </div>
+
+  <div class="side-section">
+    <span class="side-label">Technical Stack</span>
+    <div class="side-value">
+      Python · PyTorch · TensorFlow<br>
+      HuggingFace · LLaMA<br>
+      Azure · GCP · Linux<br>
+      MLFlow · GitHub Actions<br>
+      C/C++ · Rust (working)
+    </div>
+  </div>
+
+  <div class="side-section">
+    <span class="side-label">Education</span>
+    <div class="side-value">
+      <strong style="color:var(--accent)">UPC</strong><br>
+      B.Sc. Computer Science<br>
+      GPA 3.50 / 4.00<br>
+      <em>Expected 2026</em><br><br>
+      <strong style="color:var(--accent)">Matsuo-Iwasawa Lab</strong><br>
+      U-Tokyo GCI Program<br>
+      Data Science &amp; ML<br>
+      <em>Apr – Jul 2026</em><br><br>
+      <strong style="color:var(--accent)">PUCP</strong><br>
+      AI Summer Camp<br>
+      <em>2025</em>
+    </div>
+  </div>
+
+  <div class="side-section">
+    <span class="side-label">Certifications</span>
+    <div class="side-value">
+      Google ML on Cloud<br>
+      Specialization (2025)<br><br>
+      SALA Summit of AI<br>
+      LATAM (2026)
+    </div>
+  </div>
+
+  <div class="side-section">
+    <span class="side-label">Languages</span>
+    <div class="side-value">
+      Spanish — Native<br>
+      English — B2 → C1<br>
+      Japanese — Basic
+    </div>
+  </div>
+
+  <div class="side-section">
+    <span class="side-label">Conferences</span>
+    <div class="side-value">
+      SimBIG 2025 (Talk)<br>
+      WAIMLAP / PUCP (Talk)<br>
+      SALA AI LATAM 2026<br>
+      (Poster: DeMemTe)
+    </div>
+  </div>
+
+  <div class="side-section">
+    <span class="side-label">Research Group</span>
+    <div class="side-value">
+      <a href="https://percep3.com">Percep3.com</a><br>
+      Independent student<br>
+      research collective,<br>
+      Lima · Peru
+    </div>
+  </div>
+
+</aside>
+
+<!-- ══ CONTENT ══ -->
+<div class="content">
+
+  <!-- SYNERGY BOX -->
+  <!-- 
+  <div class="synergy">
+    <div class="synergy-title">Why This Collaboration Makes Sense</div>
+    <p>
+      My published work on <strong>gloss-free multimodal sign language alignment</strong> sits
+      precisely at the intersection of the <strong>Vision &amp; Language</strong> line at CENIA.
+      I align visual motion sequences (2D skeletal keypoints) with frozen LLM embedding spaces —
+      combining geometry, temporal reasoning, and language — across real low-resource datasets
+      (LSA64, Peruvian Sign Language). I bring an active publication record and a working
+      implementation ready for collaborative extension.
+    </p>
+  </div> -->
+
+  <!-- PUBLICATIONS -->
+  <section>
+    <div class="section-title">Publications &amp; Manuscripts</div>
+
+    <div class="pub-entry">
+      <div class="pub-title">Imitator: Multimodal Sign Language Model</div>
+      <div class="pub-venue"><span class="pub-badge">SPRINGER 2026</span> SimBIG 2025 · International Conf. on Information Management &amp; Big Data</div>
+      <div class="pub-details">
+        Velasquez Borasino, C.; Mancusi Barreda, G.; Vilchez Marin, R.<br>
+        Proposed a <strong>gloss-free multimodal architecture</strong> aligning 2D skeletal keypoint sequences with
+        a pretrained LLM (LLaMA) embedding space using cross-attention with learnable token queries,
+        rotary positional embeddings, and a lightweight conv-transformer encoder.
+        Stable cross-linguistic alignment achieved: validation loss ≈ 8.0×10⁻⁴ under 5-fold CV.
+      </div>
+    </div>
+
+    <div class="pub-entry">
+      <div class="pub-title">Learning Motion-Based Embeddings for Sign Language Retrieval</div>
+      <div class="pub-venue"><span class="pub-badge">IN PREP</span> Manuscript · Submission planned 2026</div>
+      <div class="pub-details">
+        Velasquez Borasino, C.<br>
+        Transformer-based embedding model for similarity retrieval in the official Peruvian Sign Language (LSP)
+        digital dictionary. Replaces label-based search with cosine similarity over learned motion embeddings
+        (DTW weak supervision + Triplet Loss). <strong>Top-5: 77.8% · Top-10: 88.0%</strong> on LSA64.
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY RESULTS -->
+  <!--
+  <div class="metric-row">
+    <div class="metric">
+      <span class="metric-val">2</span>
+      <span class="metric-label">Publications</span>
+    </div>
+    <div class="metric">
+      <span class="metric-val">88%</span>
+      <span class="metric-label">Top-10 Retrieval</span>
+    </div>
+    <div class="metric">
+      <span class="metric-val">8×10⁻⁴</span>
+      <span class="metric-label">Alignment Loss</span>
+    </div>
+    <div class="metric">
+      <span class="metric-val">4+</span>
+      <span class="metric-label">Projects (OSS)</span>
+    </div>
+  </div> -->
+
+  <!-- RESEARCH EXPERIENCE -->
+  <section>
+    <div class="section-title">Research Experience</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">Student Researcher — Multimodal &amp; Vision–Language</div>
+        <div class="entry-date">2024 – Present</div>
+      </div>
+      <div class="entry-org">Universidad Peruana de Ciencias Aplicadas (UPC) · Lima</div>
+      <div class="entry-body"><ul>
+        <li>Design and train lightweight multimodal architectures bridging visual motion data and LLM latent spaces, with focus on low-resource and accessibility-oriented settings.</li>
+        <li>Collaborate with PhD faculty on sign language understanding, multimodal transformers, and cross-dataset embedding alignment.</li>
+        <li>Implement full training pipelines: dataset curation, DTW-based weak supervision, triplet/contrastive losses, evaluation protocols.</li>
+      </ul></div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">Research Participant — GCI Program</div>
+        <div class="entry-date">Apr 2026 – Jul 2026</div>
+      </div>
+      <div class="entry-org">Matsuo-Iwasawa Lab · University of Tokyo (Remote)</div>
+      <div class="entry-body"><ul>
+        <li>Applying data science and ML methods to real-world datasets within the Global Consumer Intelligence program.</li>
+        <li>Data preprocessing, model evaluation, and pipeline engineering in an international research environment.</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <!-- SELECTED PROJECTS -->
+  <section>
+    <div class="section-title">Selected Research Projects</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">DeMemTe — Deep Memory-Enhanced Tempered Inference</div>
+        <div class="entry-date">2026</div>
+      </div>
+      <div class="entry-org">Presented at SALA Summit of AI LATAM 2026 · <em>github.com/nakato156</em></div>
+      <div class="entry-body"><ul>
+        <li>Discrete latent memory architecture: spatial VQ-VAE integrated with self-attention over frozen CNN features.</li>
+        <li>Adaptive gating driven by quantization discrepancy; demonstrates VQ as structural feature regularizer.</li>
+        <li>Pareto improvements on clean vs. corrupted accuracy (Flowers-102, p=0.70 corruption rate).</li>
+      </ul></div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">RLHF Fine-Tuning of GPT-2 for Affective Response Generation</div>
+        <div class="entry-date">2024</div>
+      </div>
+      <div class="entry-body"><ul>
+        <li>PPO-based RLHF pipeline with reward model over fine-grained emotional categories from a BERT classifier.</li>
+        <li>GPT-2 adapted to generate supportive, sentiment-aware responses under reward guidance.</li>
+      </ul></div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">ActivAdda — Activation Addition for LLM Behavioral Control</div>
+        <div class="entry-date">2025</div>
+      </div>
+      <div class="entry-body"><ul>
+        <li>Steering vectors derived from hidden-state activations injected across LLaMA 3.1 layers without parameter updates.</li>
+        <li>Published interactive Colab demo; demonstrates interpretable, parameter-free alignment techniques.</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <!-- INDUSTRY -->
+  <section>
+    <div class="section-title">Applied AI Experience</div>
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">AI Developer</div>
+        <div class="entry-date">Apr 2025 – Present</div>
+      </div>
+      <div class="entry-org">Superintendencia de Banca, Seguros y AFP (SBS) · Lima</div>
+      <div class="entry-body"><ul>
+        <li>Developed and deployed local AI systems for internal automation, NLP interaction, and social media monitoring.</li>
+        <li>Led on-premise fine-tuning experiments for small language models; evaluated technical feasibility for institutional deployment.</li>
+        <li>Designed PowerAutomate workflows for consolidation of financial entity reports.</li>
+      </ul></div>
+    </div>
+  </section>
+
+</div><!-- /content -->
+</main>
+
+</body>
+</html>

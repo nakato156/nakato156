@@ -7,7 +7,10 @@ const links = [
 ];
 const brandInitials = 'NK';
 const brandName = 'Nakato';
-const cvHref = '#';
+const basePath = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+const cvHref = `${basePath}cv.pdf`;
 ---
 <header class="fixed top-0 left-0 right-0 z-50 flex justify-center p-6 pointer-events-none">
   <nav class="w-full max-w-5xl pointer-events-auto flex items-center justify-between px-6 py-3 glass rounded-2xl shadow-sm border border-slate-200/50 dark:border-slate-800/50">
@@ -37,6 +40,8 @@ const cvHref = '#';
       <a
         class="bg-primary hover:opacity-90 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-lg shadow-primary/20"
         href={cvHref}
+        download="Christian-Velasquez-Borasino-CV.pdf"
+        rel="nofollow"
       >
         Download CV
       </a>

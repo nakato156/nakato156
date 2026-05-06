@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /nakato156/cv.html
+Disallow: /nakato156/cv.pdf

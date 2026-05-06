@@ -4,7 +4,9 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "node scripts/generate-cv-pdf.mjs && astro build",
+    "build:site": "astro build",
+    "cv:pdf": "node scripts/generate-cv-pdf.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },

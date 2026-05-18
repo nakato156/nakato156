@@ -32,7 +32,8 @@
 
 **Imitator: Multimodal Sign Language Model**
 *Velasquez Borasino C., Mancusi Barreda G., Vilchez Marin R.*
-**SimBIG 2025** · Springer 2026
+**SimBIG 2025** · Springer 2026  
+**DOI:** https://doi.org/10.1007/978-3-032-20322-9_23 
 
 Gloss-free architecture aligning 2D skeletal keypoint sequences with frozen LLaMA embeddings via cross-attention and learnable token queries.
 

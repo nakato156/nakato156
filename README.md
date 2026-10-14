@@ -14,155 +14,47 @@
 ![](https://img.shields.io/badge/-Sign%20Language%20Understanding-1a1f2e?style=flat-square)
 ![](https://img.shields.io/badge/-LLM%20Latent%20Space%20Alignment-1a1f2e?style=flat-square)
 ![](https://img.shields.io/badge/-Robust%20Representation%20Learning-1a1f2e?style=flat-square)
-![](https://img.shields.io/badge/-RLHF-1a1f2e?style=flat-square)
 
 </div>
 
----
 
-> I am a student researcher at **UPC Lima** working on **multimodal representation alignment** in low-resource and accessibility-oriented settings. Seeking **Research Engineer / Research Intern** roles on a track toward a PhD.
+I’m Christian Velasquez Borasino, a student researcher at UPC in Lima, Peru. I work on sign language representations and their connection to language models. My other projects study visual recognition under distribution shift and conversational memory.
 
----
+[ORCID](https://orcid.org/0009-0004-6341-6924)
 
-## 📄 Publications
+## Publication
 
-<table>
-<tr>
-<td width="60%">
+### [Multimodal Sign Language Model](https://doi.org/10.1007/978-3-032-20322-9_23)
 
-**Imitator: Multimodal Sign Language Model**
-*Velasquez Borasino C., Mancusi Barreda G., Vilchez Marin R.*
-**SimBIG 2025** · Springer 2026  
-**DOI:** https://doi.org/10.1007/978-3-032-20322-9_23 
+Christian Velasquez Borasino, Giorgio Mancusi Barreda, Rody Vilchez Marin.  
+SIMBig 2025 · *Information Management and Big Data*, CCIS 2895, pp. 327–341. Springer, 2026.
 
-Gloss-free architecture aligning 2D skeletal keypoint sequences with frozen LLaMA embeddings via cross-attention and learnable token queries.
+Imitator maps skeletal keypoint sequences into the text embedding space of a frozen LLaMA model, using a convolutional Transformer encoder and learned token queries.
 
-`val. loss ≈ 8.0 × 10⁻⁴` · `5-fold CV` · `cross-linguistic`
+[DOI: 10.1007/978-3-032-20322-9_23](https://doi.org/10.1007/978-3-032-20322-9_23) · [Code](https://github.com/Percep3/Imitator-waimlap)
 
-</td>
-<td width="40%" align="center">
+## Selected projects
 
-[![Imitator Repo](https://github-readme-stats.vercel.app/api/pin/?username=Percep3&repo=Imitator&theme=github_dark&hide_border=true&title_color=6E9EFF&icon_color=6E9EFF)](https://github.com/Percep3/Imitator-waimlap)
+### [Learning Motion-Based Embeddings for Sign Language Retrieval](https://github.com/nakato156/Sign-Language-Retrival/tree/revision-six-critical-observations)
 
-</td>
-</tr>
-<tr>
-<td width="60%">
+BiSignRetrieval learns motion embeddings for sign lookup and connects them to Spanish text representations. The experiments separate retrieval with unseen signers from retrieval with held-out text variants, using LSA64 and exploratory Peruvian Sign Language data. The repository includes the data pipeline, baselines and evaluation scripts.
 
-**Learning Motion-Based Embeddings for Sign Language Retrieval**
-*Velasquez Borasino C.*
-Manuscript in preparation · Submission 2026
+### [Imitator-E1](https://github.com/nakato156/Imitator-E1)
 
-Transformer embedding model for similarity-based retrieval over the official Peruvian Sign Language dictionary. DTW-based weak supervision + Triplet Loss.
+A continuation of Imitator that predicts Gemma token IDs from sign keypoints. An ST-GCN processes the skeleton before a RoPE Transformer and cross-attention token queries produce text predictions. The repository includes temporal experiments and an animated example that can be regenerated without the full dataset.
 
-`Top-5: 77.8%` · `Top-10: 88.0%` · `LSA64`
+### [DeMemte](https://github.com/nakato156/Dememte)
 
-</td>
-<td width="40%" align="center">
+Experiments on visual recognition under distribution shift. I compare VQSA representations and test-time adaptation with episodic retrieval that contributes directly to classifier logits, measuring accuracy and calibration across Flowers-102, ImageNet-C, ImageNet-R and CIFAR-C.
 
-*Repo coming soon*
+[Experiments and claims](https://github.com/nakato156/Dememte/blob/main/THESIS.md)
 
-</td>
-</tr>
-</table>
+### [RAMEM](https://github.com/nakato156/ramem)
 
----
+A local terminal chat with conversational memory. SQLite stores the conversations; hybrid retrieval selects past exchanges for a Gemma model to answer with source citations. The project includes session management, GGUF and Transformers backends, and memory evaluation tools.
 
+[Architecture](https://github.com/nakato156/ramem/blob/main/docs/architecture.md)
 
-## 🔬 Selected Research Projects
+## Tools
 
-> Each project is built around an explicit hypothesis and evaluated against controlled baselines.
-
-<div align="center">
-
-<a href="https://github.com/Percep3/Imitator-waimlap">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Percep3&repo=Imitator&theme=github_dark&hide_border=true&title_color=6E9EFF&icon_color=6E9EFF" />
-</a>
-<a href="https://github.com/nakato156/Dememte">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=nakato156&repo=Dememte&theme=github_dark&hide_border=true&title_color=6E9EFF&icon_color=6E9EFF" />
-</a>
-
-<a href="https://github.com/nakato156/ActivAdda">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=nakato156&repo=ActivAdda&theme=github_dark&hide_border=true&title_color=6E9EFF&icon_color=6E9EFF" />
-</a>
-<a href="https://github.com/nakato156/skai">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=nakato156&repo=skai&theme=github_dark&hide_border=true&title_color=6E9EFF&icon_color=6E9EFF" />
-</a>
-
-<a href="https://github.com/nakato156/nado">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=nakato156&repo=nado&theme=github_dark&hide_border=true&title_color=6E9EFF&icon_color=6E9EFF" />
-</a>
-<a href="https://github.com/nakato156/World-model">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=nakato156&repo=World-model&theme=github_dark&hide_border=true&title_color=6E9EFF&icon_color=6E9EFF" />
-</a>
-
-</div>
-
-<details>
-<summary><b>Research context per project →</b></summary>
-
-<br/>
-
-| Project | Hypothesis | Key Results |
-|---|---|---|
-| **Imitator** | A lightweight conv-transformer encoder with RoPE + cross-attention can align sign sequences to LLM token space without gloss supervision | Val. loss ≈ 8.0×10⁻⁴ · Cross-linguistic on LSA64 + LSP |
-| **Sign Retrieval** | Cosine similarity over learned motion embeddings outperforms label-based dictionary search in low-resource settings | Top-5: 77.8% · Top-10: 88.0% (LSA64) |
-| **DeMemTe** | VQ-VAE acts as a structural regularizer — not just a reconstruction module — enabling Pareto gains under corruption | Pareto clean/corrupted · p=0.70 · Flowers-102 |
-| **ActivAdda** | Activation addition is a practical, update-free mechanism for steering LLM responses toward target behaviors | Qualitative alignment with steering directions |
-| **SKAI** | Fine-grained emotional reward modeling via PPO can adapt GPT-2 for sentiment-aware supportive generation | Full RLHF pipeline end-to-end |
-| **World-model** | VAE-compressed representations can support RL navigation without direct state access | Proof-of-concept in GTA V simulation |
-
-</details>
-
----
-
-## 🛠 Stack
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,rust,cpp,linux,git,azure&theme=dark&perline=8" alt="Tech stack" />
-
-<br/><br/>
-
-![](https://img.shields.io/badge/Multimodal%20Learning-1a1f2e?style=flat-square)
-![](https://img.shields.io/badge/Representation%20Alignment-1a1f2e?style=flat-square)
-![](https://img.shields.io/badge/Transformers-1a1f2e?style=flat-square)
-![](https://img.shields.io/badge/Contrastive%20Learning-1a1f2e?style=flat-square)
-![](https://img.shields.io/badge/RLHF-1a1f2e?style=flat-square)
-![](https://img.shields.io/badge/VQ--VAE-1a1f2e?style=flat-square)
-![](https://img.shields.io/badge/HDF5%20Pipelines-1a1f2e?style=flat-square)
-
-</div>
-
----
-
-## 📊 GitHub Activity
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=nakato156&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true&title_color=6E9EFF&icon_color=6E9EFF&rank_icon=github" />
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nakato156&theme=github_dark&hide_border=true&layout=compact&title_color=6E9EFF&langs_count=6" />
-
-</div>
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com/?user=nakato156&theme=github-dark-blue&hide_border=true&ring=6E9EFF&fire=6E9EFF&currStreakLabel=6E9EFF" alt="GitHub streak" />
-
-</div>
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=nakato156&theme=react-dark&hide_border=true&color=6E9EFF&line=6E9EFF&point=ffffff&area=true&area_color=1a2744" alt="Contribution graph" />
-
-</div>
-
----
-
-<div align="center">
-
-*"Small, honest systems evaluated against explicit baselines."*
-
-[![Profile views](https://komarev.com/ghpvc/?username=nakato156&color=6E9EFF&style=flat-square&label=profile+views)](https://github.com/nakato156)
-
-</div>
+Python · PyTorch · Transformers · FastAPI · TypeScript · Linux

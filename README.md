@@ -56,8 +56,7 @@ Manuscript in preparation · Submission 2026
 
 BiSignRetrieval learns motion and Spanish text representations for cosine-ranked sign lookup. Experiments on LSA64 separate unseen-signer retrieval from held-out text retrieval, with exploratory evaluation on Peruvian Sign Language data.
 
-Earlier LSA64 run: `Top-5: 77.8%` · `Top-10: 88.0%`  
-Current signer-independent SupCon: `Success@1: 87.60 ± 1.71%` · `3 seeds`
+`Top-5: 77.8%` · `Top-10: 88.0%` · `LSA64`
 
 </td>
 <td width="40%" align="center">
@@ -75,25 +74,18 @@ Current signer-independent SupCon: `Success@1: 87.60 ± 1.71%` · `3 seeds`
 
 <div align="center">
 
-<a href="https://github.com/Percep3/Imitator-waimlap">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Percep3&repo=Imitator-waimlap&theme=github_dark&hide_border=true&title_color=6E9EFF&icon_color=6E9EFF" alt="Imitator" />
+<a href="https://github.com/nakato156/Sign-Language-Retrival/tree/revision-six-critical-observations">
+  <img src="https://img.shields.io/badge/Learning%20Motion--Based%20Embeddings-for%20Sign%20Language%20Retrieval-0d1117?style=for-the-badge&logo=github&logoColor=6E9EFF&labelColor=1a1f2e" alt="Learning Motion-Based Embeddings for Sign Language Retrieval" />
 </a>
-<a href="https://github.com/nakato156/Dememte">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=nakato156&repo=Dememte&theme=github_dark&hide_border=true&title_color=6E9EFF&icon_color=6E9EFF" alt="DeMemte" />
-</a>
-
 <a href="https://github.com/nakato156/Imitator-E1">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=nakato156&repo=Imitator-E1&theme=github_dark&hide_border=true&title_color=6E9EFF&icon_color=6E9EFF" alt="Imitator-E1" />
 </a>
+
+<a href="https://github.com/nakato156/Dememte">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=nakato156&repo=Dememte&theme=github_dark&hide_border=true&title_color=6E9EFF&icon_color=6E9EFF" alt="DeMemte" />
+</a>
 <a href="https://github.com/nakato156/ramem">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=nakato156&repo=ramem&theme=github_dark&hide_border=true&title_color=6E9EFF&icon_color=6E9EFF" alt="RAMEM" />
-</a>
-
-<a href="https://github.com/nakato156/ActivAdda">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=nakato156&repo=ActivAdda&theme=github_dark&hide_border=true&title_color=6E9EFF&icon_color=6E9EFF" alt="ActivAdda" />
-</a>
-<a href="https://github.com/nakato156/skai">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=nakato156&repo=skai&theme=github_dark&hide_border=true&title_color=6E9EFF&icon_color=6E9EFF" alt="SKAI" />
 </a>
 
 </div>
@@ -105,13 +97,10 @@ Current signer-independent SupCon: `Success@1: 87.60 ± 1.71%` · `3 seeds`
 
 | Project | Hypothesis | Key Results |
 |---|---|---|
-| **[Imitator](https://github.com/Percep3/Imitator-waimlap)** | A convolutional Transformer encoder with cross-attention can map sign keypoints into frozen LLaMA text embeddings | Val. loss ≈ 8.0×10⁻⁴ · 5-fold CV · LSA64 + LSP |
 | **[Learning Motion-Based Embeddings for Sign Language Retrieval](https://github.com/nakato156/Sign-Language-Retrival/tree/revision-six-critical-observations)** | Learned motion embeddings support cosine-ranked sign lookup under separate signer and text generalization protocols | Earlier LSA64 run: Top-5 77.8% · Top-10 88.0%; current signer-independent SupCon: Success@1 87.60 ± 1.71% over 3 seeds |
 | **[Imitator-E1](https://github.com/nakato156/Imitator-E1)** | An ST-GCN and RoPE Transformer with token queries can predict Gemma token IDs from sign keypoints | Free-running token top-1: 0.369 · Exact sequence match: 7.4% |
 | **[DeMemte](https://github.com/nakato156/Dememte)** | Episodic retrieval at the classifier logits can improve recognition under distribution shift, with temperature scaling controlling calibration | Flowers-102 corrupt accuracy: 50.3% → 53.2%; ECE: 0.091 → 0.046 with retrieval + temperature scaling |
 | **[RAMEM](https://github.com/nakato156/ramem)** | Hybrid retrieval of past conversations gives a local Gemma chat access to conversational memory | SQLite storage · Hybrid retrieval · Source citations · GGUF and Transformers backends |
-| **[ActivAdda](https://github.com/nakato156/ActivAdda)** | Activation addition can steer LLM responses without updating model weights | Qualitative alignment with steering directions |
-| **[SKAI](https://github.com/nakato156/skai)** | Emotional reward modeling via PPO can adapt GPT-2 for sentiment-aware generation | RLHF pipeline with reward modeling and PPO |
 
 </details>
 

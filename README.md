@@ -72,23 +72,40 @@ BiSignRetrieval learns motion and Spanish text representations for cosine-ranked
 
 ## 🔬 Selected Research Projects
 
-<div align="center">
+<table width="100%">
+<tr>
+<td width="50%" valign="top" align="center">
 
-<a href="https://github.com/nakato156/Sign-Language-Retrival/tree/revision-six-critical-observations">
-  <img src="https://img.shields.io/badge/Learning%20Motion--Based%20Embeddings-for%20Sign%20Language%20Retrieval-0d1117?style=for-the-badge&logo=github&logoColor=6E9EFF&labelColor=1a1f2e" alt="Learning Motion-Based Embeddings for Sign Language Retrieval" />
-</a>
+### [Learning Motion-Based Embeddings for Sign Language Retrieval](https://github.com/nakato156/Sign-Language-Retrival/tree/revision-six-critical-observations)
+
+Motion embeddings and Spanish text for sign language lookup.
+
+</td>
+<td width="50%" valign="top" align="center">
+
 <a href="https://github.com/nakato156/Imitator-E1">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=nakato156&repo=Imitator-E1&theme=github_dark&hide_border=true&title_color=6E9EFF&icon_color=6E9EFF" alt="Imitator-E1" />
 </a>
 
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top" align="center">
+
 <a href="https://github.com/nakato156/Dememte">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=nakato156&repo=Dememte&theme=github_dark&hide_border=true&title_color=6E9EFF&icon_color=6E9EFF" alt="DeMemte" />
 </a>
+
+</td>
+<td width="50%" valign="top" align="center">
+
 <a href="https://github.com/nakato156/ramem">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=nakato156&repo=ramem&theme=github_dark&hide_border=true&title_color=6E9EFF&icon_color=6E9EFF" alt="RAMEM" />
 </a>
 
-</div>
+</td>
+</tr>
+</table>
 
 <details>
 <summary><b>Research context per project →</b></summary>
